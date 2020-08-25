@@ -1,0 +1,28 @@
+<web-app>
+    <!-- Definitions -->
+    <servlet>
+        <servlet-name>servlet</servlet-name>
+        <servlet-class>MyServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>generic-servlet</servlet-name>
+        <servlet-class>MyGenericServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>http-servlet</servlet-name>
+        <servlet-class>MyHTTPServlet</servlet-class>
+    </servlet>
+    <!-- Mappings -->
+    <servlet-mapping>
+        <servlet-name>servlet</servlet-name>
+        <url-pattern>/servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>generic-servlet</servlet-name>
+        <url-pattern>/generic-servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>http-servlet</servlet-name>
+        <url-pattern>/http-servlet</url-pattern>
+    </servlet-mapping>
+</web-app>
